@@ -58,12 +58,13 @@ function Item({ item, onChange, onDelete }) {
       <button
         type='button'
         className='delete-button'
+        aria-label='delete-button'
         onClick={() => onDelete(item.id)}
       >
-          Delete
+        Delete
       </button>
     </div>
   );
 }
 
-export default Item
+export default Item;
